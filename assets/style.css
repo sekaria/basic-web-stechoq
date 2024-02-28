@@ -1,80 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-	--main-color: #333a73;
-	--second-color: #fba834;
+  --main-color: #333a73;
+  --second-color: #fba834;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 /* NAVBAR START */
 .navbar {
-	background-color: #f8f9fa;
-	padding: 10px 15px;
-	text-align: center;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar ul {
-	list-style-type: none;
-	display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .navbar img {
-	max-width: 60px;
-	height: auto;
-	margin-right: 20px;
+  max-width: 60px;
+  height: auto;
+  margin-right: 20px;
 }
 
 .navbar a {
-	text-decoration: none;
-	color: var(--main-color);
-	padding: 5px 20px;
-	display: inline-block;
+  text-decoration: none;
+  color: var(--main-color);
+  padding: 5px 20px;
+  display: inline-block;
 }
 
 .navbar a:hover {
-	background-color: var(--second-color);
+  background-color: var(--second-color);
 }
 
 .navbar-toggler {
-	display: none;
-	cursor: pointer;
-	color: var(--main-color);
-	font-weight: 700;
-	font-size: 20px;
+  display: none;
+  cursor: pointer;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* CSS BAGIAN HERO SECTION */
+.hero img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.paraph {
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  /* top: -60vh; */
+  bottom: 25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+.paraph p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* padding: 5px 0px 0px 0px; */
+  font-size: 20px;
+  color: white;
+}
+
+.paraph h1 {
+  /* padding: 5px 0px 0px 0px; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 50px;
+}
+
+.paraph button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+  font-size: 16px;
+  text-align: center;
+  color: aliceblue;
+  /* background-color: rgb(69, 149, 246); */
+  background-color: var(--main-color);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.paraph button:hover {
+  background-color: #e0e0e0;
+  color: rgb(55, 17, 17);
 }
 
 @media screen and (max-width: 768px) {
-	.navbar a {
-		padding: 10px;
-	}
+  .navbar a {
+    padding: 10px;
+  }
 
-	.navbar-toggler {
-		display: block;
-	}
+  .navbar-toggler {
+    display: block;
+  }
 
-	.navbar ul {
-		display: none;
-		position: absolute;
-		top: 45px;
-		left: 0;
-		width: 100%;
-		background-color: #f8f9fa;
-		text-align: center;
-		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-		padding: 10px;
-	}
+  .navbar ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
 
-	.navbar ul.active {
-		display: block;
-	}
+  .navbar ul.active {
+    display: block;
+  }
+
+  .paraph {
+    bottom: 35vh;
+  }
+
+  .paraph h1 {
+    font-size: 32px;
+  }
 }
 /* NAVBAR END */
