@@ -154,6 +154,89 @@ body {
 	color: #555;
 }
 
+
+.footer {
+  background-color: #3C5E7A;
+  margin-top: 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 24px;
+}
+
+.footer-item {
+  grid-gap: 2px;
+}
+
+.footer-image {
+  background-color: #FFF;
+  border-radius: 8px;
+  width: 12px;
+  height: 14px;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #F0F4F4;
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 8px;
+  width: 4rem;
+  height: 4rem;
+}
+
+.footer-heading {
+  font-weight: bold;
+  font-size: 20px;
+  color: #F0F4F4;
+}
+
+.footer-list {
+  display: grid;
+  gap: 2px;
+}
+
+.footer-link {
+  color: #F0F4F4;
+}
+
+.footer-link:hover {
+  color: #3C5E7A;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-contact-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.footer-contact-info p {
+  font-size: 16px;
+  color: #F0F4F4;
+}
+
+.footer-contact-info a {
+  font-size: 16px;
+  color: #F0F4F4;
+  text-decoration: none;
+}
+
+.footer-contact-info a:hover {
+  color: #3C5E7A;
+}
+
+
 @media screen and (max-width: 768px) {
 	.navbar a {
 		padding: 10px;
